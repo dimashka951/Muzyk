@@ -1,0 +1,94 @@
+/*Навігація
+========================================================*/
+nav {
+	width:960px;
+	margin: 0 auto;
+}
+
+nav:before{
+ content: '';
+ display: block;
+ height: 50px;
+ width:100%;
+ background:rgba(0,0,0,0.9);
+ position: absolute;
+ left: 0;
+ z-index:-1;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	height:50px;
+}
+ul li {
+	float:left;
+	padding-left:15px;
+
+}
+ul li a{
+	color: #fff;
+	display:block;
+	height:50px;
+	padding:0 30px;
+	text-transform:uppercase;
+	text-decoration:none;
+	line-height:50px;
+	opacity:.6;
+}
+ul li a:hover{
+	transition:0.8s;
+	opacity:1;
+}
+/*Шрифт
+=================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+/*Фон
+================================================*/
+body { background-image: url(glówna.jpg); }
+body { background-position: center 30px; }
+body { background-repeat: no-repeat; }
+body{
+    background: url(glówna.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+body{
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+/*Текст
+========================================================*/
+.title {
+	font-size: 25px;
+	color:#000;
+	padding-left: 10px;
+
+}
+.title span {
+	font-family:"сentury Gothic" cursive;
+	position:relative;left:58%;
+	display: inline;
+	background-color: rgba(255,255,255,.5);
+	box-shadow:-10px 0 0 rgba(255,255,255,.5),10px 0 0 rgba(255,255,255,.5);
+	padding:0 0 10px 0 0;
+	color: #000000;
+	line-height: 14px;
+	font-size: 18px;
+}
+/*Підвал
+=========================================================*/
+.footer{
+ display:flex;
+
+}
+.footer-text{
+	position:relative;left:33%;
+	font-family:"Century Gothic" cursive;
+}
